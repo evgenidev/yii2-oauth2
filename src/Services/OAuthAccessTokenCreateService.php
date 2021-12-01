@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace EvgeniDev\Yii2\Oauth2\Services;
+namespace EvgeniDev\Yii2\OAuth2\Services;
 
-use EvgeniDev\Yii2\Oauth2\Exceptions\InvalidConditionException;
-use EvgeniDev\Yii2\Oauth2\Exceptions\ValidationException;
-use EvgeniDev\Yii2\Oauth2\Records\OAuthAccessToken;
-use EvgeniDev\Yii2\Oauth2\Records\OAuthApproval;
+use EvgeniDev\Yii2\OAuth2\Exceptions\InvalidConditionException;
+use EvgeniDev\Yii2\OAuth2\Exceptions\ValidationException;
+use EvgeniDev\Yii2\OAuth2\Records\OAuthAccessToken;
+use EvgeniDev\Yii2\OAuth2\Records\OAuthApproval;
 use Throwable;
 
 /**
@@ -18,8 +18,8 @@ final class OAuthAccessTokenCreateService
     /**
      * Generates the Access Token.
      *
-     * @throws \EvgeniDev\Yii2\Oauth2\Exceptions\ValidationException
-     * @throws \EvgeniDev\Yii2\Oauth2\Exceptions\InvalidConditionException
+     * @throws \EvgeniDev\Yii2\OAuth2\Exceptions\ValidationException
+     * @throws \EvgeniDev\Yii2\OAuth2\Exceptions\InvalidConditionException
      * @throws \Throwable
      */
     public function __invoke(OAuthApproval $approval): OAuthAccessToken

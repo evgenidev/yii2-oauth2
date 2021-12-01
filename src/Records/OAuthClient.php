@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace EvgeniDev\Yii2\Oauth2\Records;
+namespace EvgeniDev\Yii2\OAuth2\Records;
 
-use EvgeniDev\Yii2\Oauth2\Components\ActiveRecord;
-use EvgeniDev\Yii2\Oauth2\Queries\OAuthClientQuery;
+use EvgeniDev\Yii2\OAuth2\Components\ActiveRecord;
+use EvgeniDev\Yii2\OAuth2\Queries\OAuthClientQuery;
 use Yii;
 
 /**

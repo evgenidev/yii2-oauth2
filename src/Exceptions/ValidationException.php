@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace EvgeniDev\Yii2\Oauth2\Exceptions;
+namespace EvgeniDev\Yii2\OAuth2\Exceptions;
 
 use yii\base\Model;
 

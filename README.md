@@ -1,4 +1,4 @@
-# Simple Yii2 OAuth2 Server
+# Yii2 OAuth2 Extension
 
 ## Installation
 
@@ -24,7 +24,7 @@ To use this extension, add the following code in your application configuration:
 ```php
 'modules' => [
     'oauth2' => [
-        'class' => \EvgeniDev\Yii2\Oauth2\Module::class,
+        'class' => \EvgeniDev\Yii2\OAuth2\Module::class,
         'accessTokenLifetime' => 3600 * 12,
         'identityClass' => \app\models\User::class,
     ],
@@ -44,7 +44,7 @@ If you want to add a custom authorize view file simple add a authorizeView param
 ```php
 'modules' => [
     'oauth2' => [
-        'class' => \EvgeniDev\Yii2\Oauth2\Module::class::class,
+        'class' => \EvgeniDev\Yii2\OAuth2\Module::class::class,
         'accessTokenLifetime' => 3600 * 12,
         'identityClass' => \app\models\User::class,
         'authorizeViewPath' => '@app/views/your_view',
@@ -65,7 +65,7 @@ use yii\web\Response;
 
 'modules' => [
     'oauth2' => [
-        'class' => \EvgeniDev\Yii2\Oauth2\Module::class,
+        'class' => \EvgeniDev\Yii2\OAuth2\Module::class,
         'accessTokenLifetime' => 3600 * 12,
         'identityClass' => \app\models\User::class,
         'spaApp' => true,
@@ -74,13 +74,25 @@ use yii\web\Response;
 ],
 ```
 
-The next step you should run migration.
+Create a migration in your project and expend from \EvgeniDev\Yii2\OAuth2\Migrations\Oauth.
 
-```shell script
-./yii migrate --migrationPath=@vendor/evgenidev/yii2-oauth2/src/Migrations
+```php
+
+use EvgeniDev\Yii2\OAuth2\Migrations\OAuth2;
+
+/**
+ * Your oauth migration.
+ */
+class m191117_223223_oauth extends OAuth2
+{
+
+}
+
 ```
 
 This migration creates the oauth2 database scheme and insert test data.
+
+Apply migration.
 
 On the next step you should add url rule to urlManager, like this:
 
@@ -165,7 +177,7 @@ class Controller extends \yii\rest\Controller
 To identify a client you can use a function findIdentityByAccessToken() in your User identity AR model:
 
 ```php
-use EvgeniDev\Yii2\Oauth2\Records\OAuthAccessToken;
+use EvgeniDev\Yii2\OAuth2\Records\OAuthAccessToken;
 use yii\db\ActiveRecord;
 use yii\web\IdentityInterface;
 
@@ -193,4 +205,3 @@ class User extends ActiveRecord implements IdentityInterface
     }
 }
 ```
-

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace EvgeniDev\Yii2\Oauth2\Commands;
+namespace EvgeniDev\Yii2\OAuth2\Commands;
 
-use EvgeniDev\Yii2\Oauth2\Exceptions\InvalidConditionException;
-use EvgeniDev\Yii2\Oauth2\Records\OAuthClient;
+use EvgeniDev\Yii2\OAuth2\Exceptions\InvalidConditionException;
+use EvgeniDev\Yii2\OAuth2\Records\OAuthClient;
 
 /**
  * OAuth console controller.
@@ -15,7 +15,7 @@ final class DefaultController extends \yii\console\Controller
     /**
      * Creates Oauth client.
      *
-     * @throws \EvgeniDev\Yii2\Oauth2\Exceptions\InvalidConditionException
+     * @throws \EvgeniDev\Yii2\OAuth2\Exceptions\InvalidConditionException
      */
     public function actionCreateClient(string $redirectUri, string $name)
     {
@@ -39,7 +39,7 @@ final class DefaultController extends \yii\console\Controller
     /**
      * Deletes Oauth client.
      *
-     * @throws \EvgeniDev\Yii2\Oauth2\Exceptions\InvalidConditionException
+     * @throws \EvgeniDev\Yii2\OAuth2\Exceptions\InvalidConditionException
      */
     public function actionDeleteClient(string $name, string $redirectUri = null)
     {

@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace EvgeniDev\Yii2\Oauth2\Controllers;
+namespace EvgeniDev\Yii2\OAuth2\Controllers;
 
-use EvgeniDev\Yii2\Oauth2\Components\Controller;
-use EvgeniDev\Yii2\Oauth2\Exceptions\ValidationException;
-use EvgeniDev\Yii2\Oauth2\Forms\OAuthAuthorizeForm;
-use EvgeniDev\Yii2\Oauth2\Module;
-use EvgeniDev\Yii2\Oauth2\Records\OAuthApproval;
-use EvgeniDev\Yii2\Oauth2\Services\OAuthApprovalCreateService;
-use EvgeniDev\Yii2\Oauth2\Services\OAuthCodeCreateService;
-use EvgeniDev\Yii2\Oauth2\Services\OAuthRequestService;
+use EvgeniDev\Yii2\OAuth2\Components\Controller;
+use EvgeniDev\Yii2\OAuth2\Exceptions\ValidationException;
+use EvgeniDev\Yii2\OAuth2\Forms\OAuthAuthorizeForm;
+use EvgeniDev\Yii2\OAuth2\Module;
+use EvgeniDev\Yii2\OAuth2\Records\OAuthApproval;
+use EvgeniDev\Yii2\OAuth2\Services\OAuthApprovalCreateService;
+use EvgeniDev\Yii2\OAuth2\Services\OAuthCodeCreateService;
+use EvgeniDev\Yii2\OAuth2\Services\OAuthRequestService;
 use Exception;
 use Yii;
 use yii\filters\auth\CompositeAuth;

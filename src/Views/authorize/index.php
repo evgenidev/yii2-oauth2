@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-use EvgeniDev\Yii2\Oauth2\Module;
+use EvgeniDev\Yii2\OAuth2\Module;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /**
  * @var $this \yii\web\View
- * @var $client \EvgeniDev\Yii2\Oauth2\Records\OAuthClient
- * @var $form \EvgeniDev\Yii2\Oauth2\Forms\OAuthAuthorizeForm
+ * @var $client \EvgeniDev\Yii2\OAuth2\Records\OAuthClient
+ * @var $form \EvgeniDev\Yii2\OAuth2\Forms\OAuthAuthorizeForm
  * @var $state string
  */
 

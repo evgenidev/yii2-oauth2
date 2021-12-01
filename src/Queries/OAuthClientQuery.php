@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace EvgeniDev\Yii2\Oauth2\Queries;
+namespace EvgeniDev\Yii2\OAuth2\Queries;
 
-use EvgeniDev\Yii2\Oauth2\Components\ActiveQuery;
+use EvgeniDev\Yii2\OAuth2\Components\ActiveQuery;
 
 /**
  * OAuthClient repository.
  *
- * @method \EvgeniDev\Yii2\Oauth2\Records\OAuthClient one($db = null)
- * @method \EvgeniDev\Yii2\Oauth2\Records\OAuthClient[] all($db = null)
+ * @method \EvgeniDev\Yii2\OAuth2\Records\OAuthClient one($db = null)
+ * @method \EvgeniDev\Yii2\OAuth2\Records\OAuthClient[] all($db = null)
  */
 class OAuthClientQuery extends ActiveQuery
 {

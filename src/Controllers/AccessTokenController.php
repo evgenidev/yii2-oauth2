@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace EvgeniDev\Yii2\Oauth2\Controllers;
+namespace EvgeniDev\Yii2\OAuth2\Controllers;
 
-use EvgeniDev\Yii2\Oauth2\Components\Controller;
-use EvgeniDev\Yii2\Oauth2\Services\OAuthAccessTokenCreateService;
-use EvgeniDev\Yii2\Oauth2\Services\OAuthRequestService;
+use EvgeniDev\Yii2\OAuth2\Components\Controller;
+use EvgeniDev\Yii2\OAuth2\Services\OAuthAccessTokenCreateService;
+use EvgeniDev\Yii2\OAuth2\Services\OAuthRequestService;
 use Exception;
 use Yii;
 use yii\web\Response;

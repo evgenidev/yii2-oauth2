@@ -2,14 +2,14 @@
 
 declare(strict_types = 1);
 
-namespace EvgeniDev\Yii2\Oauth2\Migrations;
+namespace EvgeniDev\Yii2\OAuth2\Migrations;
 
-use EvgeniDev\Yii2\Oauth2\Components\Migration;
+use EvgeniDev\Yii2\OAuth2\Components\Migration;
 
 /**
  * OAuth2 Server schema.
  */
-final class M122118230200Oauth extends Migration
+class OAuth2 extends Migration
 {
     /**
      * {@inheritDoc}

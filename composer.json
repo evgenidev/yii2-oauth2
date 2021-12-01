@@ -21,6 +21,6 @@
     "yiisoft/yii2": ">=2.0.5"
   },
   "autoload": {
-    "psr-4": {"EvgeniDev\\Yii2\\Oauth2\\": "/src"}
+    "psr-4": {"EvgeniDev\\Yii2\\OAuth2\\": "src"}
   }
 }

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace EvgeniDev\Yii2\Oauth2\Records;
+namespace EvgeniDev\Yii2\OAuth2\Records;
 
-use EvgeniDev\Yii2\Oauth2\Queries\OAuthAuthorizationCodeQuery;
+use EvgeniDev\Yii2\OAuth2\Queries\OAuthAuthorizationCodeQuery;
 use Yii;
 use yii\db\ActiveRecord;
 

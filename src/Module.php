@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace EvgeniDev\Yii2\Oauth2;
+namespace EvgeniDev\Yii2\OAuth2;
 
 use yii\console\Application;
 use yii\i18n\PhpMessageSource;
@@ -46,7 +46,7 @@ class Module extends \yii\base\Module implements \yii\base\BootstrapInterface
      */
     public function init()
     {
-        $this->controllerNamespace = 'EvgeniDev\Yii2\Oauth2\Controllers';
+        $this->controllerNamespace = 'EvgeniDev\Yii2\OAuth2\Controllers';
         parent::init();
 
         if (empty($this->layout)) {
@@ -62,7 +62,7 @@ class Module extends \yii\base\Module implements \yii\base\BootstrapInterface
     public function bootstrap($app)
     {
         if ($app instanceof Application) {
-            $this->controllerNamespace = 'EvgeniDev\Yii2\Oauth2\Commands';
+            $this->controllerNamespace = 'EvgeniDev\Yii2\OAuth2\Commands';
         }
     }
 

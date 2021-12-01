@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace EvgeniDev\Yii2\Oauth2\Services;
+namespace EvgeniDev\Yii2\OAuth2\Services;
 
-use EvgeniDev\Yii2\Oauth2\Records\OAuthApproval;
-use EvgeniDev\Yii2\Oauth2\Records\OAuthAuthorizationCode;
-use EvgeniDev\Yii2\Oauth2\Records\OAuthClient;
+use EvgeniDev\Yii2\OAuth2\Records\OAuthApproval;
+use EvgeniDev\Yii2\OAuth2\Records\OAuthAuthorizationCode;
+use EvgeniDev\Yii2\OAuth2\Records\OAuthClient;
 use Yii;
 use yii\web\Request;
 use yii\web\Response;

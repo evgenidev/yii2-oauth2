@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace EvgeniDev\Yii2\Oauth2\Components;
+namespace EvgeniDev\Yii2\OAuth2\Components;
 
 /**
  * Extended ActiveQuery.

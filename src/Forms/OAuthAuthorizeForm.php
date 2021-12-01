@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace EvgeniDev\Yii2\Oauth2\Forms;
+namespace EvgeniDev\Yii2\OAuth2\Forms;
 
 /**
  * Oauth authorization form.

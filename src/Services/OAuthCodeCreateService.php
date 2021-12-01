@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace EvgeniDev\Yii2\Oauth2\Services;
+namespace EvgeniDev\Yii2\OAuth2\Services;
 
-use EvgeniDev\Yii2\Oauth2\Exceptions\InvalidConditionException;
-use EvgeniDev\Yii2\Oauth2\Exceptions\ValidationException;
-use EvgeniDev\Yii2\Oauth2\Records\OAuthAuthorizationCode;
-use EvgeniDev\Yii2\Oauth2\Records\OAuthClient;
+use EvgeniDev\Yii2\OAuth2\Exceptions\InvalidConditionException;
+use EvgeniDev\Yii2\OAuth2\Exceptions\ValidationException;
+use EvgeniDev\Yii2\OAuth2\Records\OAuthAuthorizationCode;
+use EvgeniDev\Yii2\OAuth2\Records\OAuthClient;
 use yii\web\User;
 use Throwable;
 
@@ -19,8 +19,8 @@ final class OAuthCodeCreateService
     /**
      * Generates and installs Authorisation Code.
      *
-     * @throws \EvgeniDev\Yii2\Oauth2\Exceptions\ValidationException
-     * @throws \EvgeniDev\Yii2\Oauth2\Exceptions\InvalidConditionException
+     * @throws \EvgeniDev\Yii2\OAuth2\Exceptions\ValidationException
+     * @throws \EvgeniDev\Yii2\OAuth2\Exceptions\InvalidConditionException
      * @throws \Throwable
      */
     public function __invoke(OAuthClient $client, User $webuser): OAuthAuthorizationCode

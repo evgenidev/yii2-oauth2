@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace EvgeniDev\Yii2\Oauth2\Queries;
+namespace EvgeniDev\Yii2\OAuth2\Queries;
 
-use EvgeniDev\Yii2\Oauth2\Components\ActiveQuery;
+use EvgeniDev\Yii2\OAuth2\Components\ActiveQuery;
 
 /**
  * OAuthAuthorizationCode repository.
  *
- * @method \EvgeniDev\Yii2\Oauth2\Records\OAuthAuthorizationCode one($db = null)
- * @method \EvgeniDev\Yii2\Oauth2\Records\OAuthAuthorizationCode[] all($db = null)
+ * @method \EvgeniDev\Yii2\OAuth2\Records\OAuthAuthorizationCode one($db = null)
+ * @method \EvgeniDev\Yii2\OAuth2\Records\OAuthAuthorizationCode[] all($db = null)
  */
 class OAuthAuthorizationCodeQuery extends ActiveQuery
 {
