@@ -1,0 +1,26 @@
+{
+  "name": "evgenidev/yii2-oauth2",
+  "description": "Simple PHP OAuth2 Server for Yii2",
+  "keywords": [
+    "yii2",
+    "extension",
+    "module",
+    "oauth",
+    "oauth2"
+  ],
+  "license": "proprietary",
+  "type": "yii2-extension",
+  "authors": [
+    {
+      "name": "Miroshnichenko Evgeni",
+      "email": "evgeni_mir@mail.ru"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0",
+    "yiisoft/yii2": ">=2.0.5"
+  },
+  "autoload": {
+    "psr-4": {"EvgeniDev\\Yii2\\Oauth2\\": "/src"}
+  }
+}
